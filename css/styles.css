@@ -49,4 +49,15 @@ ul li {
     font-weight: 200;
 }
 
-/* TODO… */
+ul li:nth-child(3n) {
+    background: #ffdbad;
+}
+
+ul li:nth-child(5n) {
+    background: #ff0ce1;
+}
+
+ul li:nth-child(15n) {
+    background: #670074;
+    color: white;
+}
