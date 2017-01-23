@@ -13,13 +13,8 @@ let i = 0;
 while ( ++i <= 100 ) {
     let sMessage = "";
 
-    if ( i % 3 === 0 ) {
-        sMessage += "Fizz";
-    }
-
-    if ( i % 5 === 0 ) {
-        sMessage += "Buzz";
-    }
+    !( i % 3 ) && ( sMessage += "Fizz" );
+    !( i % 5 ) && ( sMessage += "Buzz" );
 
     $container.insertAdjacentHTML( "beforeend", `<li>${ sMessage || i }</li>` );
 }
